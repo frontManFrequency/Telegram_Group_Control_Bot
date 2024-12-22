@@ -3,9 +3,9 @@
 
 error_reporting(0);
 set_time_limit(60);
-$ne=new mysqli('localhost','user','pass','dbname');//اطلاعات دیتابیس به ترتیب جا گذاری کنید
+$ne=new mysqli('localhost:3306','xstore_botaccess','£=308!%c0Q£m8G+=','xstore_botdb');//اطلاعات دیتابیس به ترتیب جا گذاری کنید
 
-$token='   ';//توکن
+$token='8088513875:AAFGP-jviLDlVSHSLzNYge-IVq-g4qYUAR0';//توکن
 define('API_KEY',$token);
 
 function Neman($method,$data=[],$token=API_KEY) {

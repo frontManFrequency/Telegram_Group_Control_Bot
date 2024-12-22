@@ -25,7 +25,7 @@ function jd($array,$j=0) {
 	return json_decode($array,$j);
 }
 
-$token='  ';//توکن
+$token='8088513875:AAFGP-jviLDlVSHSLzNYge-IVq-g4qYUAR0';//توکن
 define('API_KEY',$token);
 
 if(!is_dir('ne'))mkdir('ne');
@@ -192,7 +192,7 @@ $locks=[
 	'hard'=>'سختگیرانه'
 ];
 
-$dev=[735334403,764193752];//ایدی عددی ادمین
+$dev=[895404911];//ایدی عددی ادمین
 // Defines
 
 define('FROM',$from);
@@ -371,7 +371,7 @@ class db extends mysqli {
 
 $questions=jd(file_get_contents('questions.json'),1);
 
-$ne=new db('localhost','user','pass','dbname');//اطلاعات دیتابیس به ترتیب گذاری کنید
+$ne=new db('localhost:3306','xstore_botaccess','£=308!%c0Q£m8G+=','xstore_botdb');//اطلاعات دیتابیس به ترتیب گذاری کنید
 ;
 
 $ne->query('create table if not exists groups(id varchar(15),creator varchar(10),vip json,promote json,ban json,flood json,locked json,warn json,silent json,step json,filter json,installer int,del json)');

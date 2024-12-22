@@ -16,11 +16,11 @@ jahanbot.ir    کانال ما : @JahanBots
 ini_set('display_errors',1);
 error_reporting(E_ALL);
 
-$ne=new mysqli('localhost','user','pass','dbname');//اطلاعات دیتابیس را به ترتیب جا گذاری کنید
+$ne=new mysqli('localhost:3306','xstore_botaccess','£=308!%c0Q£m8G+=','xstore_botdb');//اطلاعات دیتابیس را به ترتیب جا گذاری کنید
 
 $ne->set_charset('utf8');
 
-$token='  ';//توکن 
+$token='8088513875:AAFGP-jviLDlVSHSLzNYge-IVq-g4qYUAR0';//توکن 
 define('API_KEY',$token);
 
 function Neman($method,$data=[],$token=API_KEY) {
